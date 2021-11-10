@@ -43,18 +43,15 @@
         let finalArray = [];
 
         for (let i = 0; i < arrayResult.length; i++) {
-            let copy = arrayResult[i];
-            console.log('arrayResult[i]', arrayResult[i])
-            copy.shift();
-            console.log('copy', copy)
+            const copy = arrayResult[i];
+            var theRemovedElement = copy.shift();
 
             var topValues = copy.sort((a, b) => b - a).slice(0, 5);
-            console.log('topValues', topValues)
             
             let value = topValues.reduce(reducer);
-            console.log('value???', value, arrayResult[i])
 
-            arrayResult[i].push(value / 5)
+            arrayResult[i].push(Math.floor(value / 5))
+            arrayResult[i][0] = theRemovedElement;
         }
 
         function firstAndLast(array) {
@@ -72,10 +69,7 @@
          for (let i = 0; i < array.length; i++) {
            result.push(firstAndLast(array[i]))
          }
-
-        console.log('array', array)
-        console.log('result', result)
-
+         console.log('result', result)
         return result;
     };
 
