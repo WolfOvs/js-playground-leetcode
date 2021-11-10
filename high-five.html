@@ -14,15 +14,72 @@
         let idList = [];
 
         for (let i = 0; i < list.length; i++) {
-        console.log('222', list[i])
             if(!idList.includes(list[i][0])) {
                 idList.push(list[i][0])
             }
         }
-        console.log('idList', idList)
+
+        let array = [];
+
+        for (let i = 0; i < idList.length; i++) {
+          array.push([idList[i]])
+        }
+
+        let arrayResult = array;
+
+        for (let i = 0; i < array.length; i++) {
+          for (let x = 0; x < list.length; x++) {
+            
+            if(list[x][0] === array[i][0]) {
+              arrayResult[i].push(list[x][1])
+            }
+          }
+        }
+
+        const reducer = (previousValue, currentValue, currentIndex) => {
+            return previousValue + currentValue
+        };
+
+        let finalArray = [];
+
+        for (let i = 0; i < arrayResult.length; i++) {
+            let copy = arrayResult[i];
+            console.log('arrayResult[i]', arrayResult[i])
+            copy.shift();
+            console.log('copy', copy)
+
+            var topValues = copy.sort((a, b) => b - a).slice(0, 5);
+            console.log('topValues', topValues)
+            
+            let value = topValues.reduce(reducer);
+            console.log('value???', value, arrayResult[i])
+
+            arrayResult[i].push(value / 5)
+        }
+
+        function firstAndLast(array) {
+
+          var firstItem = array[0];
+          var lastItem = array[array.length - 1];
+
+          var objOutput = [firstItem, lastItem];
+
+        return objOutput;
+        }
+
+        let result = [];
+
+         for (let i = 0; i < array.length; i++) {
+           result.push(firstAndLast(array[i]))
+         }
+
+        console.log('array', array)
+        console.log('result', result)
+
+        return result;
     };
 
     highFive([[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]);
-
+    //1: 99
 </script>
 </html>
