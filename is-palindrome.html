@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Is Palindrome</title>
+  </head>
+  <body>
+      <h1>Is Palindrome</h1>
+</body>
+
+<script>
+    var isPalindrome = function(x) {
+		if(x < 0) return false;
+		let y = Array.from(x.toString()).reverse();
+			var result = y.map(function (x) { 
+				return parseInt(x, 10); 
+			  });
+			  let resultNumber = Number(result.join(""))
+			if(x === resultNumber) {
+				return true;
+			} else {
+				return false;
+			}
+	};
+
+    isPalindrome(121);
+
+</script>
+</html>
