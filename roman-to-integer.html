@@ -30,80 +30,39 @@
         });
 
 
-        console.log('numbers', numbers)
-
         let sumList = [];
 
         for (let i = 0; i < numbers.length; i++) {
             let next = numbers[i + 1] ? numbers[i + 1] : 0;
             let before = numbers[i - 1] ? numbers[i - 1] : 0;
 
-            //è maggiore del prossimo o maggiore di quello prima, allora mettilo
-            if(numbers[i] >= next && numbers[i] >= before) {
+            if(numbers[i] >= before) {
                 sumList.push(numbers[i]);
             } 
-
-            if(numbers[i] <= before) {
-                
-            } 
              
-            //quello dopo è maggiore, quindi differenza tra i 2
-            if(next > numbers[i]) {
+            if(next > numbers[i] && numbers.length > 2) {
                 let difference = next - numbers[i];
                 sumList.push(difference);
+                i++
             }
         };
-
-
-        console.log('sumList', sumList)
-
-        let solution = [];
-
-        for (let i = 0; i < sumList.length; i++) {
-            let next = sumList[i + 1] ? sumList[i + 1] : 0;
-            let before = sumList[i - 1] ? sumList[i - 1] : 0;
-            
-
-            //è maggiore del prossimo o maggiore di quello prima, allora mettilo
-            if(sumList[i] >= next && sumList[i] >= before) {
-                solution.push(sumList[i]);
-            } 
-
-            if(sumList[i] <= before) {
-                
-            } 
-             
-            //quello dopo è maggiore, quindi differenza tra i 2
-            if(next > sumList[i]) {
-                let difference = next - sumList[i];
-                solution.push(difference);
-            }
-
-        };
-
-
-        console.log('solution', solution)
 
         const sum = (prev, next) => prev + next;
         const diff = (prev, next) => next - prev;
 
-        let final = solution.reduce(sum);
+        let final = sumList.reduce(sum);
 
-        if(solution.length < 3) {
-            if(solution[0] < solution[1]) {
-                let final = solution.reduce(diff);
-                console.log('final?', final)
+            if(sumList[0] < sumList[1]) {
+                let final = sumList.reduce(diff);
                 return final;
             }
-        }
-
-        console.log('final', final)
 
         return final;
     };
     romanToInt('MCMXCIV')
     romanToInt('IV');
     romanToInt('III');
+    romanToInt('LVIII');
     
 
 </script>
