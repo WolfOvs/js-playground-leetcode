@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Roman to integer</title>
+  </head>
+  <body>
+      <h1>Roman to integer</h1>
+</body>
+
+<script>
+    var romanToInt = function(s) {
+
+        const mapValues = {
+            "I":1,
+            "V":5,
+            "X":10,
+            "L":50,
+            "C":100,
+            "D":500,
+            "M":1000,
+        }
+        
+        let list = Array.from(s);
+
+        let numbers = [];
+
+        list.forEach(element => {
+            let value = mapValues[element];
+            numbers.push(value);
+        });
+
+
+        console.log('numbers', numbers)
+
+        let sumList = [];
+
+        for (let i = 0; i < numbers.length; i++) {
+            if(i == 0 || numbers[i + 1] <= numbers[i] || i === numbers.length - 1) {
+                sumList.push(numbers[i]);
+            } else {
+                let difference = numbers[i + 1] - numbers[i];
+                if(numbers[i + 1]) {
+                    sumList.push(difference);
+                }
+            }
+        };
+
+
+        console.log('sumList', sumList)
+
+        let solution = [];
+
+        for (let i = 0; i < sumList.length; i++) {
+            if(i == 0 || sumList[i] >= sumList[i + 1] || i === numbers.length - 1) {
+                solution.push(sumList[i]);
+            }
+        };
+
+
+        console.log('solution', solution)
+
+        const reducer = (prev, next) => prev + next;
+
+        const final = solution.reduce(reducer);
+
+        console.log('final', final)
+        
+        return final;
+    };
+
+    romanToInt('IV');
+
+</script>
+</html>
