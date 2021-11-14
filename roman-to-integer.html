@@ -35,13 +35,22 @@
         let sumList = [];
 
         for (let i = 0; i < numbers.length; i++) {
-            if(i == 0 || numbers[i + 1] <= numbers[i] || i === numbers.length - 1) {
+            let next = numbers[i + 1] ? numbers[i + 1] : 0;
+            let before = numbers[i - 1] ? numbers[i - 1] : 0;
+
+            //è maggiore del prossimo o maggiore di quello prima, allora mettilo
+            if(numbers[i] >= next && numbers[i] >= before) {
                 sumList.push(numbers[i]);
-            } else {
-                let difference = numbers[i + 1] - numbers[i];
-                if(numbers[i + 1]) {
-                    sumList.push(difference);
-                }
+            } 
+
+            if(numbers[i] <= before) {
+                
+            } 
+             
+            //quello dopo è maggiore, quindi differenza tra i 2
+            if(next > numbers[i]) {
+                let difference = next - numbers[i];
+                sumList.push(difference);
             }
         };
 
@@ -51,24 +60,51 @@
         let solution = [];
 
         for (let i = 0; i < sumList.length; i++) {
-            if(i == 0 || sumList[i] >= sumList[i + 1] || i === numbers.length - 1) {
+            let next = sumList[i + 1] ? sumList[i + 1] : 0;
+            let before = sumList[i - 1] ? sumList[i - 1] : 0;
+            
+
+            //è maggiore del prossimo o maggiore di quello prima, allora mettilo
+            if(sumList[i] >= next && sumList[i] >= before) {
                 solution.push(sumList[i]);
+            } 
+
+            if(sumList[i] <= before) {
+                
+            } 
+             
+            //quello dopo è maggiore, quindi differenza tra i 2
+            if(next > sumList[i]) {
+                let difference = next - sumList[i];
+                solution.push(difference);
             }
+
         };
 
 
         console.log('solution', solution)
 
-        const reducer = (prev, next) => prev + next;
+        const sum = (prev, next) => prev + next;
+        const diff = (prev, next) => next - prev;
 
-        const final = solution.reduce(reducer);
+        let final = solution.reduce(sum);
+
+        if(solution.length < 3) {
+            if(solution[0] < solution[1]) {
+                let final = solution.reduce(diff);
+                console.log('final?', final)
+                return final;
+            }
+        }
 
         console.log('final', final)
-        
+
         return final;
     };
-
+    romanToInt('MCMXCIV')
     romanToInt('IV');
+    romanToInt('III');
+    
 
 </script>
 </html>
