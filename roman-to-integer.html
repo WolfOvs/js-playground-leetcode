@@ -30,34 +30,24 @@
         });
 
 
-        let sumList = [];
+        let sumList = null;
 
         for (let i = 0; i < numbers.length; i++) {
             let next = numbers[i + 1] ? numbers[i + 1] : 0;
-            let before = numbers[i - 1] ? numbers[i - 1] : 0;
 
-            if(numbers[i] >= before) {
-                sumList.push(numbers[i]);
+            if(numbers[i] >= next) {
+                sumList = sumList + numbers[i];
             } 
-             
-            if(next > numbers[i] && numbers.length > 2) {
-                let difference = next - numbers[i];
-                sumList.push(difference);
-                i++
-            }
+
+            if(numbers[i] < next) {
+                sumList = sumList - numbers[i];
+            } 
+            
         };
+        console.log('numbers', numbers)
+        console.log('sumList', sumList)
 
-        const sum = (prev, next) => prev + next;
-        const diff = (prev, next) => next - prev;
-
-        let final = sumList.reduce(sum);
-
-            if(sumList[0] < sumList[1]) {
-                let final = sumList.reduce(diff);
-                return final;
-            }
-
-        return final;
+        return sumList;
     };
     romanToInt('MCMXCIV')
     romanToInt('IV');
