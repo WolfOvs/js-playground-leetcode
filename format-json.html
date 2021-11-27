@@ -1,0 +1,3679 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Format json</title>
+</head>
+
+<body>
+    <h1>Format json</h1>
+</body>
+
+<script>
+
+    var tableJson = [
+        {
+            "key": "Enna",
+            "areaName": "Enna",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "35",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "8980",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "13718",
+                        "forecast": "3650310",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "848",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "3829240",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "889",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "6349",
+                        "forecast": "107551",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "24",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "2927",
+                        "forecast": "112530",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "26",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "11",
+                        "forecast": "102003",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "23",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "109",
+                        "forecast": "50524",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "11",
+                        "forecast": "11",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "184",
+                        "forecast": "40397",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "9",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "6661",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5063",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1280852",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "297",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "32312",
+                    "forecast": "9185131",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "11",
+                    "forecast": "2129",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Gallese",
+            "areaName": "Gallese",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "9239",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "15763",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "6920",
+                        "forecast": "2019745",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "482",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "5037",
+                        "forecast": "3184683",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "636",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "3516",
+                        "forecast": "108334",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "21",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "4169",
+                        "forecast": "113349",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "22",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "1764",
+                        "forecast": "102746",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "20",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "1382",
+                        "forecast": "50891",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "92",
+                        "forecast": "10",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "1706",
+                        "forecast": "40691",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "8",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "329868",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "65",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "21146",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "2646258",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "442",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "49497",
+                    "forecast": "8617711",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "92",
+                    "forecast": "1710",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Istrana",
+            "areaName": "Istrana",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "19693",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "456",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "1",
+                        "forecast": "2003",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "1684",
+                        "forecast": "867351",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "189",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "9594",
+                        "forecast": "2083698",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "456",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3370",
+                        "forecast": "2270035",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "497",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "5747",
+                        "forecast": "2250251",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "492",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "906",
+                        "forecast": "1899430",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "81",
+                        "forecast": "416",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "2228",
+                        "forecast": "1417836",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "310",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "997767",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "218",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "584858",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "128",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1414966",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "309",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "43678",
+                    "forecast": "13788196",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "81",
+                    "forecast": "3015",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Malborghetto",
+            "areaName": "Malborghetto",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "30475",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "6896",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "20151",
+                        "forecast": "5443609",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1338",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "24954",
+                        "forecast": "5637781",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1169",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "28320",
+                        "forecast": "7035459",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1459",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "14978",
+                        "forecast": "6305653",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1485",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "22387",
+                        "forecast": "7750864",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1825",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "21766",
+                        "forecast": "6542482",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "1434",
+                        "forecast": "1540",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "21696",
+                        "forecast": "8388866",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1975",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3069440",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "722",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1904777",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "448",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5410166",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1274",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "191624",
+                    "forecast": "57489096",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "1434",
+                    "forecast": "13235",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Masera",
+            "areaName": "Masera",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "1132",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "1079",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "1",
+                        "forecast": "104955",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "34",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "1845",
+                        "forecast": "908057",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1479",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "5",
+                        "forecast": "202704",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "330",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3",
+                        "forecast": "213594",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "348",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "293494",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "717",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "898834",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "0",
+                        "forecast": "2197",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "120",
+                        "forecast": "908057",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2219",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "641559",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1568",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "456881",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1116",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "439779",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1075",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "4186",
+                    "forecast": "5067915",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "0",
+                    "forecast": "11083",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Melizzano",
+            "areaName": "Melizzano",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "197",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "783",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "4147",
+                        "forecast": "938094",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "175",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "155",
+                        "forecast": "106252",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "19",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "13236",
+                        "forecast": "108432",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "20",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "6409",
+                        "forecast": "113451",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "21",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "6019",
+                        "forecast": "102838",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "19",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "1047",
+                        "forecast": "50937",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "105",
+                        "forecast": "9",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "945",
+                        "forecast": "40728",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "7",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "9606",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "21958",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "32936",
+                    "forecast": "1492300",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "105",
+                    "forecast": "275",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Messina",
+            "areaName": "Messina",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "16047",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "7499",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "2363",
+                        "forecast": "571275",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "136",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "23403",
+                        "forecast": "599278",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "103",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "13111",
+                        "forecast": "1265041",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "217",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "9086",
+                        "forecast": "1134515",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "195",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "13697",
+                        "forecast": "1028384",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "176",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "10822",
+                        "forecast": "798017",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "707",
+                        "forecast": "137",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "7675",
+                        "forecast": "515890",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "88",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "4606894",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "791",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1286743",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "221",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3668446",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "630",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "103702",
+                    "forecast": "15474483",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "707",
+                    "forecast": "2694",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Minerbio",
+            "areaName": "Minerbio",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "1",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "88",
+                        "forecast": "178150",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "60",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "70",
+                        "forecast": "38",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "129515",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "44",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "128386",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "43",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "68",
+                        "forecast": "108371",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "7",
+                        "forecast": "37",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "142",
+                        "forecast": "121340",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "41",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "6710",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "45",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "85479",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "29",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "369",
+                    "forecast": "758034",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "7",
+                    "forecast": "256",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Montesano",
+            "areaName": "Montesano",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "5716",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "3152",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "825",
+                        "forecast": "156891",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "37",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "13828",
+                        "forecast": "164582",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "33",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "1268",
+                        "forecast": "362745",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "73",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "2356",
+                        "forecast": "569305",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "115",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "4570",
+                        "forecast": "516048",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "104",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "698656",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "0",
+                        "forecast": "141",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "84",
+                        "forecast": "408752",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "82",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1031420",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "208",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "94283",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "19",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "807483",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "163",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "31800",
+                    "forecast": "4810166",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "0",
+                    "forecast": "975",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Poggio R.",
+            "areaName": "Poggio R.",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "15668",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "14059",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "13989",
+                        "forecast": "3781002",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "918",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "12981",
+                        "forecast": "1931248",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "713",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "15004",
+                        "forecast": "2770103",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1023",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3077",
+                        "forecast": "3829145",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1414",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "840",
+                        "forecast": "2277463",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "841",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "376",
+                        "forecast": "1922400",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "34",
+                        "forecast": "710",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "4173",
+                        "forecast": "1793728",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "662",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1622552",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "599",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1803856",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "666",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1347838",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "497",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "80167",
+                    "forecast": "23079333",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "34",
+                    "forecast": "8043",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Sergnano",
+            "areaName": "Sergnano",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "12",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "17",
+                        "forecast": "87139",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "32",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "3385",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "216",
+                        "forecast": "126700",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "47",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "125595",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "47",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "45",
+                        "forecast": "106015",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "6",
+                        "forecast": "39",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "69",
+                        "forecast": "118703",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "44",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "53666",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "20",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "40802",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "15",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "83620",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "31",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "360",
+                    "forecast": "745624",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "6",
+                    "forecast": "276",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Tarsia",
+            "areaName": "Tarsia",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "17",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "7627",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "13903",
+                        "forecast": "3884567",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "661",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "45",
+                        "forecast": "4074981",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "694",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "6958",
+                        "forecast": "1554193",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "264",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3855",
+                        "forecast": "1626138",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "277",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "16",
+                        "forecast": "1474017",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "251",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "0",
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "210",
+                        "forecast": "271521",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "46",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3920695",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "667",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "2208125",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "376",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "32632",
+                    "forecast": "19014237",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "0",
+                    "forecast": "3236",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "Terranuova B.",
+            "areaName": "Terranuova B.",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "8",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "1805",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "277",
+                        "forecast": "0",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "108236",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "43",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "107",
+                        "forecast": "113247",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "45",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "102653",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "41",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "50845",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "0",
+                        "forecast": "20",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "43",
+                        "forecast": "40655",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "16",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3348",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5964",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "33",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "0",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "2240",
+                    "forecast": "424982",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "0",
+                    "forecast": "168",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "TOTNORDEUROPA",
+            "areaName": "TOT. NORD EUROPA",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "1132",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "1079",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "1",
+                        "forecast": "104955",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "34",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "1845",
+                        "forecast": "908057",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1479",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "5",
+                        "forecast": "202704",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "330",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3",
+                        "forecast": "213594",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "348",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "293494",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "717",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "0",
+                        "forecast": "898834",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "0",
+                        "forecast": "2197",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "120",
+                        "forecast": "908057",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2219",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "641559",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1568",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "456881",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1116",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "439779",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1075",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "4186",
+                    "forecast": "5067915",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "0",
+                    "forecast": "11083",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "TOTNORDAFRICAEASIA",
+            "areaName": "TOT. NORD AFRICA E ASIA",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "31258",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "45608",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "41876",
+                        "forecast": "11220881",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2339",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "42746",
+                        "forecast": "11959015",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2374",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "44439",
+                        "forecast": "3614534",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "662",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "28910",
+                        "forecast": "3782534",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "701",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "26077",
+                        "forecast": "3428689",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "634",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "13360",
+                        "forecast": "1699871",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "915",
+                        "forecast": "328",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "10847",
+                        "forecast": "1358635",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "256",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5987798",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1067",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5355852",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "918",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "10611201",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1908",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "285121",
+                    "forecast": "59019011",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "915",
+                    "forecast": "11187",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "TOTRUSSIA",
+            "areaName": "TOT. RUSSIA",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "65849",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "21411",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "34141",
+                        "forecast": "9226614",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2256",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "39724",
+                        "forecast": "8701668",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2163",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "52988",
+                        "forecast": "11892683",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2939",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "21641",
+                        "forecast": "12661048",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3487",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "28974",
+                        "forecast": "12532560",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3248",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "23162",
+                        "forecast": "10578697",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "1562",
+                        "forecast": "2742",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "28308",
+                        "forecast": "11840473",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3032",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "5750134",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1561",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "4334338",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "1257",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "8342069",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "2140",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "316197",
+                    "forecast": "95860283",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "1562",
+                    "forecast": "24825",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "CONSUMILINEA",
+            "areaName": "CONSUMI DI LINEA",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "11310",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "9609",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "9065",
+                        "forecast": "2842505",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "6760",
+                        "forecast": "1585270",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "4641",
+                        "forecast": "1288382",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "3188",
+                        "forecast": "1173428",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "2585",
+                        "forecast": "1319950",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "2127",
+                        "forecast": "1051160",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "2522",
+                        "forecast": "1325788",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "1581450",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "2343188",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "3216043",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "51808",
+                    "forecast": "17727163",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": null,
+                    "forecast": null,
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "AUTOCONSUMI",
+            "areaName": "AUTOCONSUMI",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "996",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "836",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "640",
+                        "forecast": "281775",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "725",
+                        "forecast": "153053",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "644",
+                        "forecast": "121960",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "417",
+                        "forecast": "109921",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "502",
+                        "forecast": "125266",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "388",
+                        "forecast": "97116",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "363",
+                        "forecast": "125877",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "152653",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "232429",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "323842",
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "5512",
+                    "forecast": "1723892",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": null,
+                    "forecast": null,
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "TOT.FUELGASCENTRALE",
+            "areaName": "TOT. FUEL GAS DI CENTRALE",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "98239",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "68099",
+                        "forecast": null,
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "76019",
+                        "forecast": "20552451",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4629",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "84315",
+                        "forecast": "21568740",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "6016",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "97431",
+                        "forecast": "15709921",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3931",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "50554",
+                        "forecast": "16657176",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4536",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "55051",
+                        "forecast": "16254744",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4599",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "36522",
+                        "forecast": "13177402",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "2477",
+                        "forecast": "5267",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "39275",
+                        "forecast": "14107165",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "5507",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "12379491",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4196",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "10147072",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3291",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "19393050",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "5123",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "605504",
+                    "forecast": "159947210",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "2477",
+                    "forecast": "47095",
+                    "edited": false
+                }
+            }
+        },
+        {
+            "key": "TOT.FUELGAS",
+            "areaName": "TOT. FUEL GAS",
+            "data": [
+                {
+                    "month": "GENNAIO",
+                    "fuelGas": {
+                        "consumptive": "110546",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "FEBBRAIO",
+                    "fuelGas": {
+                        "consumptive": "78544",
+                        "forecast": null,
+                        "edited": null
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": null,
+                        "edited": null
+                    }
+                },
+                {
+                    "month": "MARZO",
+                    "fuelGas": {
+                        "consumptive": "85723",
+                        "forecast": "23676731",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4629",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "APRILE",
+                    "fuelGas": {
+                        "consumptive": "91800",
+                        "forecast": "23307063",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "6016",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "MAGGIO",
+                    "fuelGas": {
+                        "consumptive": "102717",
+                        "forecast": "17120262",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3931",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "GIUGNO",
+                    "fuelGas": {
+                        "consumptive": "54159",
+                        "forecast": "17940525",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4536",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "LUGLIO",
+                    "fuelGas": {
+                        "consumptive": "58139",
+                        "forecast": "17699960",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4599",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "AGOSTO",
+                    "fuelGas": {
+                        "consumptive": "39037",
+                        "forecast": "14325678",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": "2477",
+                        "forecast": "5267",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "SETTEMBRE",
+                    "fuelGas": {
+                        "consumptive": "42160",
+                        "forecast": "15558830",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "5507",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "OTTOBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "14113593",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "4196",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "NOVEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "12722689",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "3291",
+                        "edited": false
+                    }
+                },
+                {
+                    "month": "DICEMBRE",
+                    "fuelGas": {
+                        "consumptive": null,
+                        "forecast": "22932934",
+                        "edited": false
+                    },
+                    "machineHours": {
+                        "consumptive": null,
+                        "forecast": "5123",
+                        "edited": false
+                    }
+                }
+            ],
+            "total": {
+                "fuelGas": {
+                    "consumptive": "662825",
+                    "forecast": "179398265",
+                    "edited": false
+                },
+                "machineHours": {
+                    "consumptive": "2477",
+                    "forecast": "47095",
+                    "edited": false
+                }
+            }
+        }
+    ]
+
+    var graphJson = {
+        "Enna": [
+            {
+                "month": "GENNAIO",
+                "fuelGas": "27253311",
+            },
+            {
+                "month": "FEBBRAIO",
+                "fuelGas": "18892030",
+                "lineConsumption": "2665855",
+                "autoConsumption": "231879",
+                "fuelGasPerc": "86.7",
+                "lineConsumptionPerc": "12.23",
+                "autoConsumptionPerc": "1.06"
+            },
+            {
+                "month": "MARZO",
+                "fuelGas": "21089156",
+                "lineConsumption": "2514714",
+                "autoConsumption": "177448",
+                "fuelGasPerc": "88.68",
+                "lineConsumptionPerc": "10.57",
+                "autoConsumptionPerc": "0.75"
+            },
+            {
+                "month": "APRILE",
+                "fuelGas": "23390544",
+                "lineConsumption": "1875455",
+                "autoConsumption": "201027",
+                "fuelGasPerc": "91.85",
+                "lineConsumptionPerc": "7.36",
+                "autoConsumptionPerc": "0.79"
+            },
+            {
+                "month": "MAGGIO",
+                "fuelGas": "27029403",
+                "lineConsumption": "1287632",
+                "autoConsumption": "178774",
+                "fuelGasPerc": "94.85",
+                "lineConsumptionPerc": "4.52",
+                "autoConsumptionPerc": "0.63"
+            },
+            {
+                "month": "GIUGNO",
+                "fuelGas": "14024701",
+                "lineConsumption": "884361",
+                "autoConsumption": "115812",
+                "fuelGasPerc": "93.34",
+                "lineConsumptionPerc": "5.89",
+                "autoConsumptionPerc": "0.77"
+            },
+            {
+                "month": "LUGLIO",
+                "fuelGas": "15272316",
+                "lineConsumption": "717216",
+                "autoConsumption": "139330",
+                "fuelGasPerc": "94.69",
+                "lineConsumptionPerc": "4.45",
+                "autoConsumptionPerc": "0.86"
+            },
+            {
+                "month": "AGOSTO",
+                "fuelGas": "10131903",
+                "lineConsumption": "589937",
+                "autoConsumption": "107725",
+                "fuelGasPerc": "93.56",
+                "lineConsumptionPerc": "5.45",
+                "autoConsumptionPerc": "0.99"
+            },
+            {
+                "month": "SETTEMBRE",
+                "fuelGas": "10895550",
+                "lineConsumption": "699771",
+                "autoConsumption": "100704",
+                "fuelGasPerc": "93.16",
+                "lineConsumptionPerc": "5.98",
+                "autoConsumptionPerc": "0.86"
+            }
+        ],
+        "masera": [
+            {
+                "month": "MARZO",
+                "fuelGas": "20552451",
+                "lineConsumption": "2842505",
+                "autoConsumption": "281775",
+                "fuelGasPerc": "86.8",
+                "lineConsumptionPerc": "12.01",
+                "autoConsumptionPerc": "1.19"
+            },
+            {
+                "month": "APRILE",
+                "fuelGas": "21568740",
+                "lineConsumption": "1585270",
+                "autoConsumption": "153053",
+                "fuelGasPerc": "92.54",
+                "lineConsumptionPerc": "6.8",
+                "autoConsumptionPerc": "0.66"
+            },
+            {
+                "month": "MAGGIO",
+                "fuelGas": "15709921",
+                "lineConsumption": "1288382",
+                "autoConsumption": "121960",
+                "fuelGasPerc": "91.76",
+                "lineConsumptionPerc": "7.53",
+                "autoConsumptionPerc": "0.71"
+            },
+            {
+                "month": "GIUGNO",
+                "fuelGas": "16657176",
+                "lineConsumption": "1173428",
+                "autoConsumption": "109921",
+                "fuelGasPerc": "92.85",
+                "lineConsumptionPerc": "6.54",
+                "autoConsumptionPerc": "0.61"
+            },
+            {
+                "month": "LUGLIO",
+                "fuelGas": "16254744",
+                "lineConsumption": "1319950",
+                "autoConsumption": "125266",
+                "fuelGasPerc": "91.83",
+                "lineConsumptionPerc": "7.46",
+                "autoConsumptionPerc": "0.71"
+            },
+            {
+                "month": "AGOSTO",
+                "fuelGas": "13177402",
+                "lineConsumption": "1051160",
+                "autoConsumption": "97116",
+                "fuelGasPerc": "91.98",
+                "lineConsumptionPerc": "7.34",
+                "autoConsumptionPerc": "0.68"
+            },
+            {
+                "month": "SETTEMBRE",
+                "fuelGas": "14107165",
+                "lineConsumption": "1325788",
+                "autoConsumption": "125877",
+                "fuelGasPerc": "90.67",
+                "lineConsumptionPerc": "8.52",
+                "autoConsumptionPerc": "0.81"
+            },
+            {
+                "month": "OTTOBRE",
+                "fuelGas": "12379491",
+                "lineConsumption": "1581450",
+                "autoConsumption": "152653",
+                "fuelGasPerc": "87.71",
+                "lineConsumptionPerc": "11.21",
+                "autoConsumptionPerc": "1.08"
+            },
+            {
+                "month": "NOVEMBRE",
+                "fuelGas": "10147072",
+                "lineConsumption": "2343188",
+                "autoConsumption": "232429",
+                "fuelGasPerc": "79.76",
+                "lineConsumptionPerc": "18.42",
+                "autoConsumptionPerc": "1.83"
+            },
+            {
+                "month": "DICEMBRE",
+                "fuelGas": "19393050",
+                "lineConsumption": "3216043",
+                "autoConsumption": "323842",
+                "fuelGasPerc": "84.56",
+                "lineConsumptionPerc": "14.02",
+                "autoConsumptionPerc": "1.41"
+            }
+        ]
+    }
+
+    var formatJson = function (item1, item2) {
+
+
+    };
+
+    formatJson();
+
+</script>
+
+</html>

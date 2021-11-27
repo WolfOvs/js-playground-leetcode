@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Implement strStr()</title>
+  </head>
+  <body>
+      <h1>Implement strStr()</h1>
+</body>
+
+<script>
+    var strStr = function(haystack, needle) {
+      const regex = new RegExp(`${needle}`)
+      const str = haystack
+      const match = regex.exec(str)
+      
+      if(!match) return -1
+          
+      return match.index
+      };
+    
+    strStr("mississippi", 'issip');
+
+</script>
+</html>
